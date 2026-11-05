@@ -1,11 +1,11 @@
 zerops:
   - setup: app
     build:
-      base: alpine@3.20
+      base: alpine@3.23
       deployFiles:
         - entrypoint.sh
     run:
-      base: alpine@3.20
+      base: alpine@3.23
       prepareCommands:
         - sudo apk update
         - sudo apk add --no-cache bash curl unzip
